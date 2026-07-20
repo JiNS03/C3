@@ -55,10 +55,6 @@ Trigger: Google Sheets 새 행 감지 (설문지 응답 시트1)
 - **실행 시작 시점**: "Since specific ID" 옵션으로 기존 응답은 제외하고, 설정 시점 이후의 새 행만 감지하도록 구성
 - **자동 실행**: 시나리오 하단 스케줄 토글을 켜서(ON) Trigger 발생 시 자동 실행되도록 설정
 
-[Make 워크플로우 구성 화면 스크린샷 삽입]
-
-[Make 실행 결과 화면 스크린샷 삽입 - 기획팀/개발팀 각 분기 실행 확인]
-
 ### 3-2. Zapier 구현
 
 - **Trigger**: `Google Sheets – New or Updated Spreadsheet Row` (설문지 응답 시트1, 기준 열: 타임스탬프)
@@ -69,16 +65,10 @@ Trigger: Google Sheets 새 행 감지 (설문지 응답 시트1)
 - **Action**: `Google Sheets – Create Spreadsheet Row` (Path A → 기획팀 시트 / Path B → 개발팀 시트)
 - **자동 실행**: Zap을 "Publish"하여 활성화, 이후 실제 폼 제출 시 자동 실행 및 Zap History에서 실행 기록 확인
 
-[Zapier 워크플로우 구성 화면 스크린샷 삽입]
-
-[Zapier 실행 결과(Zap History) 화면 스크린샷 삽입]
-
 ### 3-3. 공통 결과 확인
 
 - 기획팀 지원자 제출 1건 → 양쪽 도구 모두 "기획팀" 시트에 정상 기록 확인
 - 개발팀 지원자 제출 1건 → 양쪽 도구 모두 "개발팀" 시트에 정상 기록 확인
-
-[기획팀/개발팀 시트 데이터 반영 화면 스크린샷 삽입]
 
 ---
 
